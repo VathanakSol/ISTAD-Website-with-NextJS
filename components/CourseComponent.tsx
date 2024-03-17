@@ -32,7 +32,8 @@ export default function CourseComponent({courses}: CourseProps) {
                                 <p className="flex items-center gap-2"><FaLayerGroup/>{course.level}</p>
                             </div>
                         </div>
-                    </Card>))}
+                    </Card>
+            ))}
             </div>
         </main>
         </>

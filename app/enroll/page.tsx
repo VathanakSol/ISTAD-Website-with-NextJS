@@ -4,20 +4,18 @@ import React from 'react';
 export default function Enroll() {
     return (
         <>
-            <div className="container mx-auto bg-white rounded-lg p-8 my-8">
-            <h1 className="uppercase text-center font-extrabold text-3xl pb-4">Enroll Form</h1>
-            {/*Form Input*/}
-            <div className="grid grid-cols-2 gap-12 w-full px-14 ">
-                {/*Col1*/}
-                <div>
-                    <form className="grid grid-cols-1 gap-4">
-                        <div>
-                            <div className="mb-2 block">
-                                <Label htmlFor="fullname1" value="Full name (en)" className="uppercase font-bold tracking-[.25em]"/>
-                                <span className="text-red-500">*</span>
+            <div className="w-[60vw] container mx-auto bg-white rounded-lg p-10 my-8 ">
+                <h1 className="uppercase text-center font-extrabold text-3xl pb-4">Enroll Form</h1>
+                <div className="grid grid-cols-2 gap-12 w-full px-14 ">
+                    <div>
+                        <form className="grid grid-cols-1 gap-4">
+                            <div>
+                                <div className="mb-2 block md:flex-col">
+                                    <Label htmlFor="fullname1" value="Full name (en)" className="uppercase font-bold tracking-[.25em]"/>
+                                    <span className="text-red-500">*</span>
+                                </div>
+                                <TextInput id="fullname1" type="email" placeholder="Enter Full Name" required/>
                             </div>
-                            <TextInput id="fullname1" type="email" placeholder="Enter Full Name" required/>
-                        </div>
                         <div>
                             <div className="mb-2 block ">
                                 <Label htmlFor="course" value="gender" className="font-bold uppercase tracking-[.25em]"/>
@@ -217,7 +215,7 @@ export default function Enroll() {
                 </div>
             </div>
             {/*Button*/}
-            <div className="flex justify-end gap-4">
+            <div className="flex justify-end gap-4 mt-10">
                 <button
                     className="w-40 bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded uppercase transition duration-500 ease-in-out">
                     Cancel
