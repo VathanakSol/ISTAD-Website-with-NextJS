@@ -1,11 +1,9 @@
-import {MdEmail} from "react-icons/md";
 import React from 'react';
+import ItNewsComponent from "@/components/ItNewsComponent";
 export default function ITNews(){
     return(
         <>
-            <div>
-                <h1>IT News Page</h1>
-            </div>
+            <ItNewsComponent />
         </>
        
     )
